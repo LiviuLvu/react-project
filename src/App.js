@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { AppClock } from './App.Clock';
+import AppConditional from './App.Connditional';
 import logo from './logo.svg';
 import './App.css';
 
@@ -12,6 +13,7 @@ class App extends Component {
           <h1 className="App-title">Welcome to React</h1>
         </header>
         <AppClock />
+        <AppConditional isLoggedIn={true} />
       </div>
     );
   }
