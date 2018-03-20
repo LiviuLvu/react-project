@@ -3,6 +3,7 @@ import { AppClock } from './App.Clock';
 import { AppLoginControl } from './App.LoginControl';
 import AppList from './App.List';
 import MultipleInputs from './App.MultipleInputs';
+import AppTemperatureConvert from './App.TemperatureConvert';
 import logo from './logo.svg';
 import './App.css';
 
@@ -18,6 +19,8 @@ class App extends Component {
         <AppLoginControl />
         <AppList />
         <MultipleInputs />
+        <hr/>
+        <AppTemperatureConvert />
       </div>
     );
   }
