@@ -1,11 +1,27 @@
 import React, { Component } from 'react';
 
-class AppClock extends Component {
+export class AppClock extends Component {
   constructor(props) {
     super(props);
-    this.state = {date: new Date()};
+    this.state = {
+      date: new Date()
+    };
   }
 
+  componentDidMount() {
+    this.timerId = setInterval(
+      () => this.tick(),
+      1000
+    );
+  }
+  componentWillUnmount() {
+    clearInterval(this.timerId);
+  }
+  tick() {
+    this.setState({
+      date: new Date()
+    });
+  }
   render() {
     return (
       <div>
@@ -15,5 +31,3 @@ class AppClock extends Component {
     );
   }
 }
-
-export default AppClock;
