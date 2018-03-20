@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { AppClock } from './App.Clock';
 import { AppLoginControl } from './App.LoginControl';
 import AppList from './App.List';
+import MultipleInputs from './App.MultipleInputs';
 import logo from './logo.svg';
 import './App.css';
 
@@ -16,6 +17,7 @@ class App extends Component {
         <AppClock />
         <AppLoginControl />
         <AppList />
+        <MultipleInputs />
       </div>
     );
   }
