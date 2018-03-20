@@ -34,7 +34,7 @@ export class AppClock extends Component {
       <div>
         <h1>Hello, world!</h1>
         <h2>It is {this.state.date.toLocaleTimeString()}.</h2>
-        <button class="btn btn-success" onClick={this.increaseCount}>Count {this.state.clickCount}</button>
+        <button className="btn btn-success" onClick={this.increaseCount}>Count {this.state.clickCount}</button>
       </div>
     );
   }

@@ -3,7 +3,7 @@ import AppMessage from './App.Message';
 
 function LoginButton(props) {
   return (
-    <button class="btn btn-danger" onClick={props.onClick}>
+    <button className="btn btn-danger" onClick={props.onClick}>
       Login
     </button>
   );
@@ -11,7 +11,7 @@ function LoginButton(props) {
 
 function LogoutButton(props) {
   return (
-    <button class="btn btn-info" onClick={props.onClick}>
+    <button className="btn btn-info" onClick={props.onClick}>
       Logout
     </button>
   );

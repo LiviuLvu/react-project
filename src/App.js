@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import { AppClock } from './App.Clock';
 import { AppLoginControl } from './App.LoginControl';
+import AppList from './App.List';
 import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
-  render() {
+  render() {    
     return (
       <div className="App row">
         <header className="App-header col-lg-12">
@@ -14,6 +15,7 @@ class App extends Component {
         </header>
         <AppClock />
         <AppLoginControl />
+        <AppList />
       </div>
     );
   }
