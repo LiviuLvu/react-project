@@ -4,6 +4,7 @@ import { AppLoginControl } from './App.LoginControl';
 import AppList from './App.List';
 import MultipleInputs from './App.MultipleInputs';
 import AppTemperatureConvert from './App.TemperatureConvert';
+import SignUpDialog from './App.Composition';
 import logo from './logo.svg';
 import './App.css';
 
@@ -15,12 +16,16 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h1 className="App-title">Welcome to React</h1>
         </header>
-        <AppClock />
-        <AppLoginControl />
-        <AppList />
-        <MultipleInputs />
-        <hr/>
-        <AppTemperatureConvert />
+        <div className="container">
+          <AppClock />
+          <AppLoginControl />
+          <br />
+          <AppList />
+          <MultipleInputs />
+          <hr/>
+          <AppTemperatureConvert />
+          <SignUpDialog/>
+        </div>
       </div>
     );
   }
